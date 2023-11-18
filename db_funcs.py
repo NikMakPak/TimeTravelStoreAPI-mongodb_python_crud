@@ -184,16 +184,3 @@ class Database:
 
     def delete_order(self, order_id):
         self.orders_col.delete_one({"_id": ObjectId(order_id)})
-
-db = Database()
-
-email = "anna@example.com"
-country = "Земля"
-vip_travel = "654a0c3739e63d6bacce1c10"
-
-# print()
-# print(db.get_user("654a186f5d76c9ee38ff30c1"))
-# print(db.create_order("654a186f5d76c9ee38ff30c1", vip_travel))
-# print(db.get_order("654a191372d253dad679fad1"))
-print(db.get_user_orders("djon@mail.ru"))
-# print(db.get_travels_by_country(country))
